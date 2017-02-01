@@ -1,7 +1,7 @@
 <template>
   <div class="message">
     <ul>
-        <li v-for="message in messages">
+        <li v-for="message in messages"　v-if="message.text !== 'two'">
             {{message.text}}
         </li>
     </ul>

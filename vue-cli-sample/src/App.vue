@@ -2,18 +2,21 @@
   <div id="app">
     <hello></hello>
     <list></list>
+    <Button></Button>
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
 import List from './components/List'
+import Button from './components/Button'
 
 export default {
   name: 'app',
   components: {
     Hello,
-    List
+    List,
+    Button
   }
 }
 </script>

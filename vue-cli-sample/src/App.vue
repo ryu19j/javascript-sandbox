@@ -3,6 +3,7 @@
     <hello></hello>
     <list></list>
     <Button></Button>
+     <Input></Input>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Hello from './components/Hello'
 import List from './components/List'
 import Button from './components/Button'
+import Input from './components/Input'
 
 export default {
   name: 'app',
   components: {
     Hello,
     List,
-    Button
+    Button,
+    Input
   }
 }
 </script>

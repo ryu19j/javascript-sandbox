@@ -3,7 +3,7 @@
     <hello></hello>
     <list></list>
     <Button></Button>
-     <Input></Input>
+    <Input></Input>
   </div>
 </template>
 

@@ -21,7 +21,15 @@
       <input type="radio" id="radio-two" value="その他の何か" v-model="picked">
       <label for="radio-two">その他の何か</label>
       <br>
-        <span>選ばれたのは、{{picked}}でした。</span>
+      <span>選ばれたのは、{{picked}}でした。</span>
+    </div>
+    <div id="demo">
+      <button v-on:click="show = !show">
+        ボタン
+      </button>
+      <transition name="fade">
+        <p v-if="show">hello</p>
+      </transition>
     </div>
   </div>
 </template>
@@ -33,9 +41,18 @@ export default {
       message: '',
       text: '',
       checked: true,
-      picked: ''
+      picked: '',
+      show: true
 
     }
   }
 }
 </script>
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .9s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+</style>

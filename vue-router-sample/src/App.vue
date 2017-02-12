@@ -2,8 +2,8 @@
   <div id="app">
     <img src="./assets/logo.png">
     <p>
-      <router-link to="/">home</router-link>
-      <router-link to="/foo">foo</router-link>
+      <router-link to="/" class="button is-primary">home</router-link>
+      <router-link to="/foo" class="button is-primary">foo</router-link>
     </p>
   <router-view></router-view>
   </div>

@@ -4,6 +4,7 @@
     <p>
       <router-link to="/" class="button is-primary">home</router-link>
       <router-link to="/foo" class="button is-primary">foo</router-link>
+      <router-link to="/bar/bar" class="button is-primary">bar</router-link>
     </p>
   <router-view></router-view>
   </div>

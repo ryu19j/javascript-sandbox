@@ -6,7 +6,7 @@
       <router-link to="/foo" class="button is-primary">foo</router-link>
       <router-link to="/bar/bar" class="button is-primary">bar</router-link>
     </p>
-    <transition name="slide">
+    <transition name="fade">
       <router-view></router-view>
     </transition>
   </div>
@@ -26,5 +26,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to, .fade-leave-active {
+  opacity: 0
 }
 </style>

@@ -4,6 +4,7 @@ import Hello from 'components/Hello'
 import Foo from 'components/Foo'
 import Bar from 'components/Bar'
 import Memo from 'components/Memo'
+import Rest from 'components/Rest'
 
 Vue.use(Router)
 
@@ -12,6 +13,7 @@ export default new Router({
     { path: '/', name: 'Hello', component: Hello },
     { path: '/foo', name: 'Foo', component: Foo },
     { path: '/bar/:id', name: 'Bar', component: Bar },
-    { path: '/memo', name: 'Memo', component: Memo }
+    { path: '/memo', name: 'Memo', component: Memo },
+    { path: '/rest', name: 'Rest', component: Rest }
   ]
 })

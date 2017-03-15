@@ -6,7 +6,7 @@
       <router-link to="/foo" class="button is-primary">foo</router-link>
       <router-link to="/bar/bar" class="button is-primary">bar</router-link>
       <router-link to="/memo" class="button is-primary">memo</router-link>
-
+      <router-link to="/rest" class="button is-primary">rest</router-link>
     </p>
     <transition name="fade">
       <router-view></router-view>

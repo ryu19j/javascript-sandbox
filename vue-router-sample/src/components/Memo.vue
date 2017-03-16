@@ -18,7 +18,7 @@ export default {
     this.getMemo()
   },
   methods: {
-    getMemo () {
+    getMemo: function (event) {
       fetch('http://localhost:8080/memo/1').then((response) => {
         console.log(response.json())
         this.memo = response.data

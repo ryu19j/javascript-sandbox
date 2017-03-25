@@ -1,6 +1,10 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <p>
+      <router-link to="/" class="button is-primary">Home</router-link>
+      <router-link to="/button" class="button is-primary">Buttom</router-link>
+    </p>
     <router-view></router-view>
   </div>
 </template>
